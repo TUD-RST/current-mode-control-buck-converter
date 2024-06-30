@@ -1,5 +1,8 @@
-// Parameters and constants for the buck converter 
-// (w) 2024 by Klaus Röbenack
+// Current-Mode Control of a Distributed Buck Converter with a Lossy Transmission Line
+// Klaus Röbenack and Daniel Gerbet, 2024
+//
+// parameters and constants for the buck converter 
+//
 // general parameters
 E    = 12;      // 12 V supply coltage
 R    = 10;      // 10 Ω load resistance
@@ -20,7 +23,7 @@ L  = Lbar;
 C  = Cbar+Cext;
 RL = RLbar;
 GC = GCbar;
-// PWM setup
+// PWM setup for control
 wpwm=5E7;
 fpwm=wpwm/(2*%pi);
 Tpwm=1/fpwm;

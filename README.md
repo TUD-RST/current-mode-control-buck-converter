@@ -1,6 +1,6 @@
 # Current-Mode Control of a Distributed Buck Converter with a Lossy Transmission Line
 
-This project contains the Scilab source files for the smulation of a distributed buck cenverter with a lossy transmission line.
+This project contains the Scilab source files for the simulation of a distributed buck cenverter with a lossy transmission line.
 
 Röbenack, K.; Gerbet, D.:   
 *Current-Mode Control of a Distributed Buck Converter with a Lossy Transmission Line*.   
@@ -16,7 +16,15 @@ Our simulations were carried out with Scilab 2024.
 
 ## Contents
 
-The [src](src) directory contains the source REDUCE files listed in the next table. These files differ in the geometry
+The [src](src) directory contains the source Scilab and Xcos files.
+
+### Parameters and Constants
+
+The file [src/context.sce](context.sce) contains the parameter values and constants for the simulation. It is called by the other script files.
+
+### Step Response
+
+<img src="images/sim-step-zcos.png" alt="Zcos Scheme for Step Response" width="85%">   
 
 ## Licence
 
