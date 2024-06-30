@@ -47,6 +47,6 @@ g.children(1).font_size=5;
 xgrid();
 g.data_bounds(2,2)=10;
 
-// output graphics
+// save graphics
 gcf().figure_size=[1000 600];
 xs2png(gcf(),"sim-step");

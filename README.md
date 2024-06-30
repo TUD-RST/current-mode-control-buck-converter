@@ -28,6 +28,12 @@ The Scilab script file [sim-step.sce](src/sim-step.sce) calls the Xcos scheme [s
 
 <img src="images/sim-step-zcos.png" alt="Zcos Scheme for Step Response" width="85%">   
 
+### PWM Excitation
+
+The Scilab script file [sim-pwm.sce](src/sim-pwm.sce) calls the Xcos scheme [sim-pwm.zcos](src/sim-pwm.zcos).  
+
+<img src="images/sim-pwm-zcos.png" alt="Zcos Scheme for PWM Excitation" width="85%">   
+
 ## Licence
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
