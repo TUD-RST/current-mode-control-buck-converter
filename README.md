@@ -20,9 +20,11 @@ The [src](src) directory contains the source Scilab and Xcos files.
 
 ### Parameters and Constants
 
-The file [src/context.sce](context.sce) contains the parameter values and constants for the simulation. It is called by the other script files.
+The file [context.sce](src/context.sce) contains the parameter values and constants for the simulation. It is called by the other script files.
 
 ### Step Response
+
+The Scilab script file [sim-step.sce](src/sim-step.sce) calls the Xcos scheme [sim-step.zcos](src/sim-step.zcos). 
 
 <img src="images/sim-step-zcos.png" alt="Zcos Scheme for Step Response" width="85%">   
 
