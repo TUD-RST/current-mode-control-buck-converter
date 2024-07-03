@@ -36,10 +36,13 @@ The Scilab script file [sim-pwm.sce](src/sim-pwm.sce) calls the Xcos scheme [sim
 
 ### Frequency Responses
 
-The Scilab script file [amplitude1.sce](src/amplitude1.sce) visualizes the amplitude frequency response for the different converter models:
+The Scilab script file [amplitude1.sce](src/amplitude1.sce) visualizes the amplitude frequency responses for the different converter models:
 
 <img src="src/amplitude1.png" alt="Amplitude response of the different converter models" width="85%">   
 
+The Scilab script file [amplitude2.sce](src/amplitude2.sce) visualizes the open loop amplitude frequency responses for the conventional converter with and without controller:
+
+<img src="src/amplitude2.png" alt="Amplitude response of the conventional converter with and without controller" width="85%">   
 
 ## Licence
 

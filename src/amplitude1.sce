@@ -8,7 +8,7 @@ N=100000;
 W=logspace(3,9,N);
 W=W(:);
 
-// aplitude values
+// amplitude values
 F=zeros(N,4);
 
 for k=1:N,
@@ -21,7 +21,7 @@ for k=1:N,
     P01=-121684.784841855/(s - 103837.683063803);
     // Padé approximant (1,2)
     P12=(8.30398290026456e6*s + 8.29900199309498e11)/(s^2 + 265983.502353863*s + 7.08181503402271e11);
-    // in dB
+    // amplitue values in dB
     F(k,1)=20*log10(abs(Pk));
     F(k,2)=20*log10(abs(Pd));
     F(k,3)=20*log10(abs(P01));
