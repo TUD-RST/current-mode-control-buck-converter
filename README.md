@@ -26,13 +26,20 @@ The file [context.sce](src/context.sce) contains the parameter values and consta
 
 The Scilab script file [sim-step.sce](src/sim-step.sce) calls the Xcos scheme [sim-step.zcos](src/sim-step.zcos). 
 
-<img src="images/sim-step-zcos.png" alt="Zcos Scheme for Step Response" width="85%">   
+<img src="images/sim-step-zcos.png" alt="Zcos scheme for step response" width="85%">   
 
 ### PWM Excitation
 
 The Scilab script file [sim-pwm.sce](src/sim-pwm.sce) calls the Xcos scheme [sim-pwm.zcos](src/sim-pwm.zcos).  
 
-<img src="images/sim-pwm-zcos.png" alt="Zcos Scheme for PWM Excitation" width="85%">   
+<img src="images/sim-pwm-zcos.png" alt="Zcos scheme for PWM excitation" width="85%">   
+
+### Frequency Responses
+
+The Scilab script file [amplitude1.sce](src/amplitude1.sce) visualizes the amplitude frequency response for the different converter models:
+
+<img src="src/amplitude1.png" alt="Amplitude response of the different converter models" width="85%">   
+
 
 ## Licence
 
