@@ -8,8 +8,12 @@ N=100000;
 W=logspace(3,9,N);
 W=W(:);
 
-// amplitude values
+// amplitude and phase values
 F=zeros(N,4);
+P=zeros(N,4);
+
+// scale rad to deg
+rad2deg=180/%pi;
 
 for k=1:N,
     s=%i*W(k);
@@ -26,9 +30,15 @@ for k=1:N,
     F(k,2)=20*log10(abs(Pd));
     F(k,3)=20*log10(abs(P01));
     F(k,4)=20*log10(abs(P12));
+    // phase in deg
+    P(k,1)=rad2deg*angle(Pk);
+    P(k,2)=rad2deg*angle(Pd);
+    P(k,3)=rad2deg*angle(P01);
+    P(k,4)=rad2deg*angle(P12);
 end;
 
 clf();
+subplot(2,1,1);
 plot2d("ln",W,F);
 xlabel("$\text{Angular frequency $\omega$ in rad/s}$");
 ylabel("$\text{Amplitude response in dB}$");
@@ -45,5 +55,24 @@ g.children(1).children(4).thickness=2;
 xgrid();
 legend("$\text{standard converter}$","$\text{distributed converter}$","$\text{Padé approximant }(0,1)$","$\text{Padé approximant }(1,2)$",3);
 
-gcf().figure_size=[1000 600];
-xs2png(gcf(),"amplitude1");
+subplot(2,1,2);
+plot2d("ln",W,P);
+xlabel("$\text{Angular frequency $\omega$ in rad/s}$");
+ylabel("$\text{Phase in deg}$");
+g=gca();
+g.font_size=4;
+g.x_label.font_size=5;
+g.y_label.font_size=5;
+g.children(1).children(1).thickness=2;
+g.children(1).children(1).foreground=5;
+g.children(1).children(1).line_style=3;
+g.children(1).children(2).thickness=2;
+g.children(1).children(3).thickness=2;
+g.children(1).children(4).thickness=2;
+xgrid();
+legend("$\text{standard converter}$","$\text{distributed converter}$","$\text{Padé approximant }(0,1)$","$\text{Padé approximant }(1,2)$",3);
+
+
+gcf().figure_size=[1000 1200];
+xs2png(gcf(),"bode1");
+xs2svg(gcf(),"bode1");

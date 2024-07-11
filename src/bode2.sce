@@ -8,9 +8,15 @@ N=100000;
 W=logspace(3,9,N);
 W=W(:);
 
-// amplitude values
+// amplitude and phase values
 F=zeros(N,2);
-Ti=1E-5; // integration time constant (PI controller))
+P=zeros(N,2);
+
+// scale rad to deg
+rad2deg=180/%pi;
+
+// integration time constant (PI controller))
+Ti=1E-5; 
 
 for k=1:N,
     s=%i*W(k);
@@ -21,9 +27,13 @@ for k=1:N,
     // amplitue values in dB
     F(k,1)=20*log10(abs(Pk));
     F(k,2)=20*log10(abs(Pol));
+    // phase in deg
+    P(k,1)=rad2deg*angle(Pk);
+    P(k,2)=rad2deg*angle(Pol);
 end;
 
 clf();
+subplot(2,1,1);
 plot2d("ln",W,F);
 xlabel("$\text{Angular frequency $\omega$ in rad/s}$");
 ylabel("$\text{Amplitude response in dB}$");
@@ -37,5 +47,20 @@ g.children(1).children(2).thickness=2;
 xgrid();
 legend("$\text{converter without controller}$","$\text{converter with PI controller}$",1);
 
-gcf().figure_size=[1000 600];
-xs2png(gcf(),"amplitude2");
+subplot(2,1,2);
+plot2d("ln",W,P);
+xlabel("$\text{Angular frequency $\omega$ in rad/s}$");
+ylabel("$\text{Phase in deg}$");
+g=gca();
+g.font_size=4;
+g.x_label.font_size=5;
+g.y_label.font_size=5;
+g.children(1).children(1).thickness=2;
+g.children(1).children(1).line_style=3;
+g.children(1).children(2).thickness=2;
+xgrid();
+legend("$\text{converter without controller}$","$\text{converter with PI controller}$",1);
+
+gcf().figure_size=[1000 1200];
+xs2png(gcf(),"bode2");
+xs2svg(gcf(),"bode2");
