@@ -34,6 +34,16 @@ The Scilab script file [sim-pwm.sce](src/sim-pwm.sce) calls the Xcos scheme [sim
 
 <img src="images/sim-pwm-zcos.png" alt="Zcos scheme for PWM excitation" width="85%">   
 
+### Open Loop Circuit Simulation
+
+Transient simulation with 6V reference voltage.
+
+<img src="images/buck-converter-open-loop1.png" alt="Open loop circuit simulation 1" width="85%">   
+
+Transient simulation with 6.144V reference voltage.
+
+<img src="images/buck-converter-open-loop2.png" alt="Open loop circuit simulation 2" width="85%">   
+
 ### Frequency Responses
 
 The Scilab script file [bode1.sce](src/bode1.sce) visualizes the amplitude frequency responses for the different converter models:
