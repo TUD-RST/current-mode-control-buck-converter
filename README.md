@@ -54,6 +54,17 @@ The Scilab script file [bode2.sce](src/bode2.sce) visualizes the open loop ampli
 
 <img src="src/bode2.png" alt="Amplitude response of the conventional converter with and without controller" width="85%">   
 
+### Open Loop Circuit Simulation
+
+Transient simulation with P controller.
+
+<img src="images/buck-converter-closed-loop1.png" alt="Closed loop circuit simulation 1" width="85%">   
+
+Transient simulation with PI controller.
+
+<img src="images/buck-converter-closed-loop2.png" alt="Closed loop circuit simulation 2" width="85%">   
+
+
 ## Licence
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
