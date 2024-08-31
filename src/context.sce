@@ -67,6 +67,6 @@ Vui=((GC*R+1)*((GC*R+1)*RL+R))/(R*(GC*R*RL+RL+R));
 Vud=((GC*R+1)*RL+R)/(E*R);
 // PI controller
 Ti=1E-5;
-k=5;
+k=1;
 kp=k;
 ki=k/Ti;
