@@ -5,9 +5,9 @@
 | file name | description |
 |-----------|-------------|
 | [buck-converter-open-loop1.txt](buck-converter-open-loop1.txt)| open loop with 6V reference voltage|
-| buck-converter-open-loop2.txt| open loop with 6.144V reference voltage|
-| buck-converter-closed-loop1.txt| closed loop with P controller|
-| buck-converter-closed-loop2.txt| closed loop with PI controller|
+| [buck-converter-open-loop2.txt](buck-converter-open-loop2.txt)| open loop with 6.144V reference voltage|
+| [buck-converter-closed-loop1.txt](buck-converter-closed-loop1.txt)| closed loop with P controller|
+| [buck-converter-closed-loop2.txt](buck-converter-closed-loop2.txt)| closed loop with PI controller|
 
 These data files are ASCII files containing the results of transient simulations. The files have the same structure:
 
