@@ -3,8 +3,8 @@
 This project contains the Scilab source files for the high level simulation of a distributed buck converter with a lossy transmission line. In addition, we provided the details for a circuit simulation using LTspice<sup>&reg;</sup> from Amalog Devices Inc.
 
 Röbenack, K.; Gerbet, D.:   
-*Current-Mode Control of a Distributed Buck Converter with a Lossy Transmission Line*.   
-Submitted to MDPI Electronics, June 2024.
+[*Current-Mode Control of a Distributed Buck Converter with a Lossy Transmission Line*](https://doi.org/10.3390/electronics13173565).   
+[Electronics](https://www.mdpi.com/journal/electronics), 2024, Volume 13, Isssure 17, 3565.
 
 ## Prerequisites
 
@@ -21,6 +21,8 @@ The circuit simulations were carried out with LTspice<sup>&reg;</sup>:
 ## Contents
 
 The [src](src) directory contains the source Scilab and Xcos files as well as the schematics files.
+
+The [data](dat) directory contains various data files.
 
 ### Parameters and Constants
 

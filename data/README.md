@@ -2,7 +2,7 @@
 
 ## Scilab data
 
-These files contain the standard deviation of the transient simulation depending on the angular PWM frequency for different duty ratios:
+These files contain the standard deviation of the current during a transient simulation depending on the angular PWM frequency for different duty ratios.
 
 Middle of operating regime:
 
@@ -19,6 +19,13 @@ Around the operating point:
 | `pwm-var510.dat` | D=0.510 |
 | `pwm-var512.dat` | D=0.512 |
 | `pwm-var514.dat` | D=0.514 |
+
+These files import two arrays:
+
+| variable/array | description |
+|----------------|-------------|
+| `W` | angular frequency in rad/s |
+| `S` | standard deviation of the current in A |
 
 ## Circuit simulation
 
